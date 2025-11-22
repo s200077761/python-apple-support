@@ -197,9 +197,13 @@ Created with Python Apple Support by s200077761 on {date}
 4. **Configure Bridging**
    - Add Python.xcframework to "Frameworks, Libraries, and Embedded Content"
    - Set to "Embed & Sign"
-   - For Swift projects: Import Python module (already in template)
-   - For Objective-C bridging: Add `#include <Python/Python.h>` to bridging header
-   - Note: The Python module import handles C API access in Swift
+   - **For Swift projects**: Use `import Python` (included in template)
+     - This import gives access to Python C API functions (Py_Initialize, PyRun_SimpleString, etc.)
+     - No bridging header needed for pure Swift projects
+   - **For Objective-C or mixed projects**: 
+     - Create a bridging header if needed
+     - Add `#include <Python/Python.h>` to the bridging header
+   - The Python.xcframework must be properly embedded for runtime access
 
 5. **Build and Run**
    - Select a simulator or device
