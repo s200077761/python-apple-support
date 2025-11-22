@@ -1,31 +1,7 @@
-# 🍎 Python Apple Support - Personal Edition
-
-> **Personal fork by s200077761** - Enhanced with custom scripts and guides
+# Python Apple Support
 
 This is a meta-package for building a version of Python that can be
 embedded into a macOS, iOS, tvOS, watchOS, or visionOS project.
-
-## 🎯 Personal Enhancements
-
-This fork includes several improvements to make it easier to use:
-
-- **[📖 Personalized README](PERSONALIZED_README.md)** - Customized overview and branding
-- **[🚀 Quick Start Guide](QUICKSTART.md)** - Get building in minutes
-- **[📱 Demo Applications](DEMOS.md)** - Example apps and code snippets
-- **[🛠️ Helper Scripts](scripts/)** - Automated build and check scripts
-
-### Quick Commands
-
-```bash
-# Check if your system is ready
-python3 scripts/check_system.py
-
-# See project overview and capabilities  
-python3 scripts/welcome.py
-
-# Build for a specific platform with guidance
-python3 scripts/build_demo.py --platform iOS
-```
 
 **This branch builds a packaged version of Python 3.14**. Other Python
 versions are available by cloning other branches of the main repository:
@@ -85,15 +61,7 @@ officially unsupported. This should enable the code to run on:
 - visionOS 2.0 or later, on:
   - Apple Vision Pro
 
-## 🚀 Quickstart
-
-### The Easy Way (Recommended)
-
-1. **Check your system**: `python3 scripts/check_system.py`
-2. **See what's possible**: `python3 scripts/welcome.py`
-3. **Build your first framework**: `python3 scripts/build_demo.py --platform iOS`
-
-### The Standard Way
+## Quickstart
 
 The easist way to use these packages is by creating a project with
 [Briefcase](https://github.com/beeware/briefcase). Briefcase will
@@ -105,10 +73,8 @@ Pre-built versions of the frameworks can be downloaded from the [Github
 releases page](https://github.com/beeware/Python-Apple-support/releases)
 and added to your project.
 
-### Building From Source
-
-To build the frameworks on your own, download/clone this
-repository, and then in the root directory, run:
+Alternatively, to build the frameworks on your own, download/clone this
+repository, and then in the root directory, and run:
 
 - `make` (or `make all`) to build everything.
 - `make macOS` to build everything for macOS.
@@ -116,8 +82,6 @@ repository, and then in the root directory, run:
 - `make tvOS` to build everything for tvOS.
 - `make watchOS` to build everything for watchOS.
 - `make visionOS` to build everything for visionOS.
-
-**See [QUICKSTART.md](QUICKSTART.md) for detailed step-by-step instructions!**
 
 This should:
 
@@ -203,48 +167,3 @@ maintained:
   (EOL October 2024)
 - [Python 3.9](https://github.com/beeware/Python-Apple-support/tree/3.9)
   (EOL October 2025)
-
----
-
-## 🎨 Personal Fork Features
-
-This fork (s200077761/python-apple-support) includes enhanced tooling:
-
-### Helper Scripts
-
-Located in `scripts/`:
-
-- **check_system.py** - Verify your Mac is ready to build
-- **welcome.py** - Interactive project overview and capabilities
-- **build_demo.py** - Guided build process with progress tracking
-
-### Enhanced Documentation
-
-- **PERSONALIZED_README.md** - Custom overview with personal branding
-- **QUICKSTART.md** - Step-by-step guide for beginners
-- **DEMOS.md** - Example applications and code samples
-
-### Configuration
-
-- **personal.config** - Customizable build settings and preferences
-
-### Usage
-
-```bash
-# Start here - check if you're ready to build
-python3 scripts/check_system.py
-
-# Learn about the project
-python3 scripts/welcome.py
-
-# Build with guidance
-python3 scripts/build_demo.py --platform iOS --verbose
-```
-
-All original functionality is preserved. These additions make the project more accessible and easier to customize!
-
----
-
-**Upstream Project**: [beeware/Python-Apple-support](https://github.com/beeware/Python-Apple-support)
-
-**Personal Fork**: Built with ❤️ for Apple platforms by s200077761
