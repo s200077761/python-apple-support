@@ -9,6 +9,7 @@ embedded into a macOS, iOS, tvOS, watchOS, or visionOS project.
 
 This fork includes several improvements to make it easier to use:
 
+- **[📋 Project Overview](PROJECT_OVERVIEW.md)** - Complete guide to this fork
 - **[📖 Personalized README](PERSONALIZED_README.md)** - Customized overview and branding
 - **[🚀 Quick Start Guide](QUICKSTART.md)** - Get building in minutes
 - **[📱 Demo Applications](DEMOS.md)** - Example apps and code snippets

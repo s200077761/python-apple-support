@@ -8,6 +8,26 @@ This directory contains utility scripts to make working with Python Apple Suppor
 
 Verifies that your system meets all requirements for building Python frameworks.
 
+### welcome.py
+
+Interactive introduction to the project with system information and quick commands.
+
+### build_demo.py
+
+Guided build process with progress tracking and error handling.
+
+### generate_template.py
+
+Generates starter templates for Python-powered Apple applications.
+
+---
+
+## Script Details
+
+### check_system.py
+
+Verifies that your system meets all requirements for building Python frameworks.
+
 **Usage:**
 ```bash
 python3 scripts/check_system.py
@@ -125,6 +145,36 @@ All scripts follow these conventions:
 - Python 3.8+
 - macOS (for build scripts)
 - No external dependencies (uses only stdlib)
+
+## Creating Your Own Scripts
+
+### generate_template.py
+
+Generates starter templates for Python-powered Apple applications.
+
+**Usage:**
+```bash
+# Generate iOS app template
+python3 scripts/generate_template.py --platform iOS --name "MyApp"
+
+# Generate macOS app template  
+python3 scripts/generate_template.py --platform macOS --name "DesktopApp"
+
+# Specify output directory
+python3 scripts/generate_template.py -p visionOS -n "VisionApp" -o ~/Projects
+```
+
+**Arguments:**
+- `--platform, -p` (required): Target platform (iOS, macOS, tvOS, watchOS, visionOS)
+- `--name, -n` (optional): App name (default: MyPythonApp)
+- `--output, -o` (optional): Output directory (default: ./template)
+
+**Generated Files:**
+- `ContentView.swift` - SwiftUI view with Python integration
+- `app/main.py` - Python code for the app
+- `README.md` - Setup and usage instructions
+
+---
 
 ## Creating Your Own Scripts
 

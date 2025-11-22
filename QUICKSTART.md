@@ -184,10 +184,11 @@ python3 --version
 ## What's Next?
 
 1. **Explore** - Look at the generated `dist/` files
-2. **Learn** - Read [USAGE.md](USAGE.md) for integration guide
-3. **Experiment** - Try the iOS/visionOS testbed projects
-4. **Customize** - Edit `personal.config` for your preferences
-5. **Build** - Create your own Python apps for Apple platforms!
+2. **Generate Template** - Create an app starter: `python3 scripts/generate_template.py -p iOS -n MyApp`
+3. **Learn** - Read [USAGE.md](USAGE.md) for integration guide
+4. **Experiment** - Try the iOS/visionOS testbed projects
+5. **Customize** - Edit `personal.config` for your preferences
+6. **Build** - Create your own Python apps for Apple platforms!
 
 ## Getting Help
 
