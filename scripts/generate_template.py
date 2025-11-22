@@ -45,6 +45,10 @@ SWIFT_TEMPLATE = '''//
 //  Created by s200077761 on {date}
 //  Python Apple Support Example
 //
+//  Note: This template uses SwiftUI and the Python C API.
+//  The 'import Python' statement gives access to Python C API functions.
+//  Make sure Python.xcframework is added to your project and set to "Embed & Sign".
+//
 
 import SwiftUI
 import Python
@@ -191,9 +195,11 @@ Created with Python Apple Support by s200077761 on {date}
    - Add both to your app's target
 
 4. **Configure Bridging**
-   - If using Objective-C bridging header:
-     - Add `#include <Python/Python.h>`
-   - Import Python in Swift files: `import Python`
+   - Add Python.xcframework to "Frameworks, Libraries, and Embedded Content"
+   - Set to "Embed & Sign"
+   - For Swift projects: Import Python module (already in template)
+   - For Objective-C bridging: Add `#include <Python/Python.h>` to bridging header
+   - Note: The Python module import handles C API access in Swift
 
 5. **Build and Run**
    - Select a simulator or device
