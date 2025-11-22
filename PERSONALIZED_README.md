@@ -36,7 +36,10 @@ make visionOS # Build for visionOS only
 
 ### Try the Demo
 ```bash
-# Run the welcome script to see what this project can do
+# Run the interactive start script
+./start.sh
+
+# Or run the welcome script to see what this project can do
 python3 scripts/welcome.py
 
 # Build a quick demo for iOS

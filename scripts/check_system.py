@@ -108,7 +108,7 @@ def main():
          "Run: xcode-select --install"),
         
         ("Python 3.8+", check_python_version, 
-         f"Current version: {sys.version_info.major}.{sys.version_info.minor}. Upgrade Python."),
+         f"Current version: {sys.version_info.major}.{sys.version_info.minor}. Python 3.8+ required. Upgrade using Homebrew: 'brew install python@3.11' or download from python.org"),
         
         ("make", check_make, 
          "Install Xcode Command Line Tools"),

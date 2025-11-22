@@ -26,6 +26,9 @@ python3 scripts/welcome.py
 
 # Build for a specific platform with guidance
 python3 scripts/build_demo.py --platform iOS
+
+# Or use the interactive start script
+./start.sh
 ```
 
 **This branch builds a packaged version of Python 3.14**. Other Python
